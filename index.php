@@ -157,8 +157,8 @@ The most common source for DOM XSS is the URL, which is typically accessed with 
 			
 		                
 		            </div>
-		        </div>
-				</div>
+		            </div>
+                            </div>
 				
 			</div>
 			</div>
@@ -178,37 +178,6 @@ The most common source for DOM XSS is the URL, which is typically accessed with 
 
 </body>
 
-<script>
-var str = "Hi!! This is a beginners course for Ethical Hacking students.Practising Hacking without permission is Illegal.So before entering the course, please read the disclaimer -----------------INetSecurity.IN E-Learning Portal Legal Information."+" \ # This is a legal warning that you need to be very careful what you say and what you do.\ However, this should NOT hold you back from doing the things you want to do with your life.\ # It is strongly recommended that you read up on and practice good security culture (and here's a great place to start).\ Your usage of this website constitutes your agreement to the following terms.\ # Users are responsible for any content they put on INetSecurity.IN E-Learning Portal, whether it be in the form of articles,\ external resources, discussion board entries.";
-
-var spans = '<span>' + str.split('').join('</span><span>') + '</span>';
-$(spans).hide().appendTo('.css-typing').each(function (i) {
-    $(this).delay(10 * i).css({
-        display: 'inline',
-        opacity: 0
-    }).animate({
-        opacity: 1
-    }, 100);
-});
-
-</script>
-<!-- Button trigger modal -->
-<div class="modal fade" id="modalQuickView2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-<div class="modal-content" style="background-image: url(img/bgf.jpg)">
-<div class="modal-body" >
-<div class="box box2"><div class="row"><div class="col-lg-8"><div class="flex-grid-thirds">
-<h2 class="h2-responsive product-name" ><div align="center"><br><strong>Congratz! <?php echo $name;?></strong></div><br><div align="center"><h2><?php echo 'XSS Reflected | Task 1';?></h2></div>
-</h2>
-<h4><div align="center"> <span class="Green-text">You have Successfully completed the task.</span></div></h4><div class="row" align='center'></div><hr><div class="row" align='center'><div class="col" align='center'> <h4 class="h4-responsive"><span class="blue-text"><p class="rounded"> <strong align="center">Score :<?php echo "400";?></strong></p></span></h4></div><div class="col" align='center'><h4 class="h4-responsive"> <span class="blue-text">
-              <p class="rounded">  <strong align="center">Coins :<?php echo "500";?></strong></p> </span></h4></div></div>
-<div class="row" align='center'><div class="col" align="center"></div></div><hr> <div class="card-body"><div class="row"></div> <div class="text-center"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div></div></div></div></div>
-</div> <audio id="aud">
-      <source src="../../img/congz.mp3">
-</audio>
-</div></div></div></div>
-<!--modal end-->
 
 
 </html>
